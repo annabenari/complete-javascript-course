@@ -235,3 +235,36 @@ console.log(greet("Anna"));
 // --------------------------------------------------
 const add = (a, b) => a + b;
 console.log(add(5, 7)); // Outputs: 12
+
+// --------------------------------------------------
+// Challenge One
+// --------------------------------------------------
+const massMark = 78;
+const heightMark = 1.69;
+
+const massJohn = 95;
+const heightJohn = 1.76;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+
+console.log(BMIMark, BMIJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+
+// --------------------------------------------------
+// Challenge Two
+// --------------------------------------------------
+const massAnna = 78;
+const heightAnna = 1.69;
+const massHarry = 92;
+const heightHarry = 1.95;
+
+const BMIAnna = massAnna / (heightAnna * heightAnna);
+const BMIHarry = massHarry / (heightHarry * heightHarry);
+console.log(BMIAnna, BMIHarry);
+
+if (BMIAnna > BMIHarry) {
+  console.log(`Anna's BMI ${BMIAnna} is higher than Harry's ${BMIJohn}!`);
+} else {
+  console.log(`Harry's BMI ${BMIHarry} is higher than Anna's ${BMIAnna}!`);
+}
